@@ -10,12 +10,27 @@
     <meta name="author" content="Felipe Belloni">
     <title>Belloni's Portfolio</title>
     <link rel="shortcut icon" href="assets/imgs/logo.jpg" type="image/x-icon">
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+            background-color: #f0f0f0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
 </head> 
 <body class="background">
     <header>
         <div class="navbar">
             <div class="divnav">
-                <a href="#"><img id="imagem" src="assets/imgs/logo/2-removebg-preview.png">
+                <a href="index.html"><img id="imagem" src="assets/imgs/logo/2-removebg-preview.png">
                 </a>
                 <div id="chk" onclick="alternarFundo()">
                     <i id="sun" class="fa-solid fa-sun" style="color: #ededed;"></i>
@@ -29,17 +44,31 @@
             <div class="telaInicio">
                 <div>
                     <h1 id="titulo">Felipe Belloni</h1>
-                    <p id="paragrafo">Developer & Editor</p>
+                    <p id="paragrafo_typing"></p>
                     <div id="bordasm">
                         <a id="linksm" href="sobre-mim.html">About me</a>
                     </div>
                 </div>
             </div>
-            <footer>
-                <p>© 2024 Felipe Belloni. Todos os direitos reservados.</p>
-            </footer>
         </div>
     </section>
+    <footer>
+        <p>© 2024 Felipe Belloni. Todos os direitos reservados.</p>
+        <div>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 <script src="assets/darkmode.js"></script>
 </html>

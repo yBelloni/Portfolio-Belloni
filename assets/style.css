@@ -8,7 +8,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    /*transition: .3s linear;*/
+    transition: .2s linear;
 };
 
 :root {
@@ -38,12 +38,20 @@
     top: 0;
 }
 
+
 .divnav a {
+    font-size: 1.2rem;
     transition: .3s;    
 }
 
+.divnav .menu{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
 .divnav a:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .divnav img {
@@ -120,7 +128,7 @@ a {
 }
 
 .section-sm-content {
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     width: 100%;
 }
@@ -196,7 +204,6 @@ a {
 .edits {
     height: 900px;
     width: 100%;
-    background: #202023;
 }
 
 .edits-bar {
@@ -211,7 +218,7 @@ a {
 
 .edits-content h1 {
     font-size: 50px;
-    padding-bottom: 90px ;
+    padding-bottom: 40px ;
     padding-top: 20px;
     text-align: center;
     color: #EDEDED;
@@ -223,7 +230,7 @@ a {
     grid-auto-rows: auto;
     gap: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ededed;
 }
 
 .fott {
@@ -282,7 +289,11 @@ body.dark #titulo {
     color: #202023;
 }
 
-body.dark #paragrafo{
+body.dark #paragrafo_typing {
+    color: #202023;
+}
+
+body.dark #paragrafo {
     color: #202023;
 }
 
@@ -312,12 +323,33 @@ body.dark .section-cv {
     color: #ededed;
 }
 
+body.dark .section-cv button {
+    color: #EDEDED;
+    background-color: #202023;
+}
+
+body.dark .section-cv i {
+    color: #EDEDED;
+}
+
+body.dark footer div a i {
+    color: #202023;
+}
+
+body.dark .edits-content h1 {
+    color: #202023;
+}
+
+body.dark .grid-itens {
+    border: 1px solid #202023;
+}
+
 footer {
+    height: 20px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    gap: 40px;
 }
 
 footer div{
@@ -325,8 +357,9 @@ footer div{
     gap: 30px;
 }
 
-footer div i{
+footer div a i{
     font-size: 19px;
+    color: #ededed;
 }
 
 footer p {
@@ -343,6 +376,10 @@ footer p {
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 50px;
+}
+
+.section-cv i {
+    color: #202023;
 }
 #cv {
     border: none;

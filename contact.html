@@ -9,15 +9,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>Belloni's Portfolio</title>
     <link rel="shortcut icon" href="assets/imgs/logo.jpg" type="image/x-icon">
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+            background-color: #f0f0f0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
-<body>
+<body class="background">
     <nav class="nav">
         <div  class="navbar">
             <div class="divnav">
-                <a href="index.html">Main</a>
-                <a href="projects.html">Projects</a>
-                <a href="edits.html">Edits</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html"><img id="imagem" src="assets/imgs/logo/2-removebg-preview.png">
+                </a>
+                <div class="menu">
+                    <a id="linksm" href="index.html">Main</a>
+                    <a id="linksm" href="projects.html">Projects</a>
+                    <a id="linksm" href="edits.html">Edits</a>
+                    <a id="linksm" href="contact.html">Contact</a>
+                </div>
+                <div id="chk" onclick="alternarFundo()">
+                    <i id="sun" class="fa-solid fa-sun" style="color: #ededed;"></i>
+                    <i id="moon" class="fa-solid fa-moon" style="color: #202023;"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -27,4 +50,5 @@
         </div>
     </section>
 </body>
+<script src="assets/darkmode.js"></script>
 </html>

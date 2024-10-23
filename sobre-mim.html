@@ -9,15 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>Belloni's Portfolio</title>
     <link rel="shortcut icon" href="assets/imgs/logo.jpg" type="image/x-icon">
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+            background-color: #f0f0f0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body class="background">
     <nav class="nav">
         <div  class="navbar">
             <div class="divnav">
-                <a id="linksm" href="index.html">Main</a>
-                <a id="linksm" href="projects.html">Projects</a>
-                <a id="linksm" href="edits.html">Edits</a>
-                <a id="linksm" href="contact.html">Contact</a>
+                <a href="index.html"><img id="imagem" src="assets/imgs/logo/2-removebg-preview.png">
+                </a>
+                <div class="menu">
+                    <a id="linksm" href="index.html">Main</a>
+                    <a id="linksm" href="projects.html">Projects</a>
+                    <a id="linksm" href="edits.html">Edits</a>
+                    <a id="linksm" href="contact.html">Contact</a>
+                </div>
                 <div id="chk" onclick="alternarFundo()">
                     <i id="sun" class="fa-solid fa-sun" style="color: #ededed;"></i>
                     <i id="moon" class="fa-solid fa-moon" style="color: #202023;"></i>
@@ -30,12 +49,12 @@
             <div class="section-sm-content">
                 <div class="text-content-sm">
                     <h1 id="titulo" class="text-sm">Hi, I'm Felipe Belloni</h1>
-                    <h2 id="titulo" class="subtitle-sm">Back End Developer</h2>
+                    <h2 id="titulo" class="subtitle-sm">Full Stack Developer</h2>
                     <p id="paragrafo" class="about-me">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dicta rem, debitis porro nulla minus laborum quibusdam alias sequi. Voluptatum earum suscipit ratione ab debitis assumenda blanditiis nemo esse voluptatibus!</p>
                     <div class="section-cv">
                         <!--Colocar curriculo aqui-->
                         <a href="assets/curriculo/Currículo Felipe Belloni  attualizadO.pdf" download>
-                            <i class="fa-solid fa-file-arrow-down" style="color: #141417;"></i>
+                            <i class="fa-solid fa-file-arrow-down"></i>
                             <button id="cv">Baixar Currículo</button>
                         </a>
                     </div>
@@ -51,20 +70,19 @@
         <p>© 2024 Felipe Belloni. Todos os direitos reservados.</p>
         <div>
             <a href="">
-                <i class="fa-brands fa-youtube" style="color: #ededed;"></i>
+                <i class="fa-brands fa-youtube"></i>
             </a>
             <a href="">
-                <i class="fa-brands fa-instagram" style="color: #ededed;"></i>
+                <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="">
-                <i class="fa-brands fa-linkedin" style="color: #ededed;"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="">
-                <i class="fa-brands fa-github" style="color: #ededed;"></i>
+                <i class="fa-brands fa-github"></i>
             </a>
         </div>
     </footer>
 </body>
-<script src="assets/fundo.js"></script>
 <script src="assets/darkmode.js"></script>
 </html>
