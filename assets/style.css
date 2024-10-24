@@ -52,6 +52,7 @@
 
 .divnav a:hover {
     transform: scale(1.2);
+    color: #73ffb2;
 }
 
 .divnav img {
@@ -138,11 +139,16 @@ a {
 }
 
 .img-sm {
-    width: 40%;
-    gap: 10px; /* Espaçamento entre os itens, opcional */
-    padding: 10px; /* Espaçamento interno, opcional */
-    border: 1px solid #ededed; /* Borda para visualizar o contêiner, opcional */
+    width: 100%;
+    max-width: 40%;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ededed;
+    object-fit: cover;
+    display: block;
 }
+
 
 .text-sm {
     color: #EDEDED;
@@ -386,6 +392,21 @@ footer p {
     cursor: pointer;
 }
 
+.fa-youtube:hover {
+    color: #ff3838;
+}
+
+.fa-instagram:hover {
+    color: #ff00f2;
+}
+
+.fa-linkedin:hover {
+    color: #389afc;
+}
+
+.fa-github:hover {
+    color: #a94dff;
+}
 
 
 

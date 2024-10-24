@@ -1,6 +1,6 @@
 const check = document.getElementById('chk');
 check.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
+document.body.classList.toggle('dark');
   
 if (document.body.classList.contains('dark')) {
     document.querySelector("#imagem").src = "assets/imgs/logo/1-removebg-preview.png";
@@ -17,7 +17,7 @@ function type() {
     if (index < text.length) {
         paragrafo_typing.textContent += text.charAt(index);
         index++;
-        setTimeout(type, 100);
+        setTimeout(type, 150);
       }
 }
 type();
