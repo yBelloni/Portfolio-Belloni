@@ -14,6 +14,7 @@
 :root {
     --preto:#000000;
     --color1: #202023;
+    --color-2: #73ffb2;
 }
 
 .nav {
@@ -98,15 +99,14 @@ a {
 }
 
 .telaInicio div h1 {
-    font-size: 5em;
+    height: 200px;
+    font-size: 7em;
     color: #EDEDED;
-    padding-bottom: 10px;
 }
 
 .telaInicio div p {
     font-size: 30px;
     color: #EDEDED;
-    padding-bottom: 20px;
 }
 
 .telaInicio div div {
@@ -359,6 +359,22 @@ body.dark .section-sm-content img {
     border: 1px #202023 solid;
 }
 
+body.dark .buttonIndex {
+    background: #202023;
+}
+
+body.dark .buttonIndex a {
+    color: #ededed;
+}
+
+body.dark .buttonIndex:after {
+    color: #ededed;
+}
+
+body.dark .buttonIndex:hover {
+    box-shadow:0px 0px 20px 1px #e89931;
+}
+
 footer {
     height: 20px;
     width: 100%;
@@ -481,6 +497,50 @@ footer p {
 .fa-github:hover {
     color: #a94dff;
 }
+
+.buttonIndex {
+    border-radius: 4px;
+    background-color: #ededed;
+    border: none;
+    text-align: center;
+    font-size: 32px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  .buttonIndex{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .buttonIndex a {
+    color: #202023;
+  }
+  
+  .buttonIndex:after {
+    content: '»';
+    color: #202023;
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buttonIndex:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    box-shadow:0px 0px 20px 1px #73ffb2;
+  }
+  
+  .buttonIndex:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
 
 
 
