@@ -569,6 +569,11 @@ body.dark .btn-one::after {
 }
 
 .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 80px 40px 66px;
     background: green;
     border-radius: 28px;
@@ -649,22 +654,6 @@ input[type="submit" i] {
 }
 
 input {
-    font-style: ;
-    font-variant-ligatures: ;
-    font-variant-caps: ;
-    font-variant-numeric: ;
-    font-variant-east-asian: ;
-    font-variant-alternates: ;
-    font-variant-position: ;
-    font-weight: ;
-    font-stretch: ;
-    font-size: ;
-    font-family: ;
-    font-optical-sizing: ;
-    font-size-adjust: ;
-    font-kerning: ;
-    font-feature-settings: ;
-    font-variation-settings: ;
     text-rendering: auto;
     color: fieldtext;
     letter-spacing: normal;
