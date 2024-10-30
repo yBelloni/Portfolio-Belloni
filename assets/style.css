@@ -34,6 +34,7 @@
 
 .divnav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -48,6 +49,28 @@
     transition: .3s;
     padding: 0px;
     margin: 0px;  
+}
+
+.divnav .fa-arrow-right {
+    display: none;
+    font-size: 30px;
+    color: #EDEDED;
+    z-index: -99;
+}
+
+body.dark .divnav .fa-arrow-right {
+    color: #202023;
+}
+
+.divnav .fa-arrow-left {
+    display: none;
+    font-size: 30px;
+    color: #EDEDED;
+    z-index: -99;
+}
+
+body.dark .divnav .fa-arrow-left {
+    color: #202023;
 }
 
 .divnav .menu{
@@ -128,7 +151,7 @@ body.dark .menu a:hover {
 }
 
 .sobre-mim {
-    height: 1300px;
+    height: 81vh;
     width: 100%;
 }
 
@@ -207,6 +230,7 @@ body.dark .text-sm span {
 .projetos {
     height: 85vh;
     width: 100%;
+    
 }
 
 .projetos-bar {
@@ -289,12 +313,12 @@ body.dark .projetos-content h1 {
     height: 100px;
     width: 30px;
     position: relative;
+    cursor: pointer;
 }
 
 #chk i {
     position: absolute;
     top: 50%;
-    left: 50%;
     line-height: 100px;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -507,6 +531,10 @@ body.dark .btn-one::after {
     color: #ff00f2;
 }
 
+.fa-discord:hover {
+    color: #383bfc;
+}
+
 .fa-linkedin:hover {
     color: #389afc;
 }
@@ -561,10 +589,18 @@ body.dark .btn-one::after {
 
 .grid-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     align-items: center;
     gap: 2.3rem;
     margin-top: 4.2rem;
+}
+
+.box a {
+    color: #202023;
+}
+
+.box h2 {
+    color: #202023;
 }
 
 .box {
@@ -574,27 +610,54 @@ body.dark .btn-one::after {
     flex-direction: column;
     align-items: center;
     padding: 80px 40px 66px;
-    background: green;
+    background-image: url('/assets/imgs/IMG-20240626-WA0063.jpg');
     border-radius: 28px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px #73ffb2;
     transition: all .50s ease;
     cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+body.dark .box {
+    box-shadow: 0 0 5px #e89931;
 }
 
 .box2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 80px 40px 66px;
-    background: yellow;
+    background-image: url('/assets/imgs/IMG-20240626-WA0063.jpg');
     border-radius: 28px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px #73ffb2;
     transition: all .50s ease;
     cursor: pointer;
+}
+
+.box2:hover {
+    transform: scale(1.05);
+}
+
+body.dark .box2 {
+    box-shadow: 0 0 5px #e89931;
 }
 
 .box3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 80px 40px 66px;
-    background: red;
+    background-image: url('/assets/imgs/IMG-20240626-WA0063.jpg');
+    background-size: cover;
     border-radius: 28px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px #73ffb2;
@@ -602,7 +665,16 @@ body.dark .btn-one::after {
     cursor: pointer;
 }
 
+.box3:hover {
+    transform: scale(1.05);
+}
+
+body.dark .box3 {
+    box-shadow: 0 0 5px #e89931;
+}
+
 .contact {
+    height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -627,8 +699,8 @@ form input, form textarea {
     padding: 20px;
     border: none;
     outline: none;
-    box-shadow: 0 0 5px blue;
-    background: #2d343f;
+    box-shadow: 0 0 5px #73ffb2;
+    background: #202027;
     color: var(--text-color);
     margin-bottom: 20px;
     border-radius: 8px;
@@ -640,10 +712,10 @@ input[type="submit" i] {
     user-select: none;
     align-items: flex-start;
     text-align: center;
-    cursor: default;
+    cursor: pointer;
     box-sizing: border-box;
-    background-color: buttonface;
-    color: buttontext;
+    background-color: #202023;
+    color: #ededed;
     white-space: pre;
     padding-block: 1px;
     padding-inline: 6px;

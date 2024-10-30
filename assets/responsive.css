@@ -62,8 +62,18 @@
         font-size: 26px !important;
     }
 
-    .divnav a {
+    .menu a {
         display: none;
+    }
+
+    .divnav .fa-arrow-right {
+        display: inline-block !important;
+        z-index: 99;
+    }
+    
+    .divnav .fa-arrow-left {
+        display: inline-block !important;
+        z-index: 99;
     }
 
     .section-sm-content {
@@ -71,10 +81,51 @@
         flex-direction: column;
     }
     .text-content-sm {
+        padding-left: 10px;
         width: 100% !important; 
     }
-    .img-sm {
-        
+    .text-sm {
+        font-size: 2.3em !important;
     }
+    .subtitle-sm {
+        font-size: 2.1em !important;
+    }
+    .about-me {
+        max-width: 85% !important;
+        font-size: 1.2em !important;
+    }
+    .tec-text-sm {
+        margin-bottom: 50px;
+        width: 400px !important;
+        height: 60px !important;
+        padding: 0 5px;
+        text-align: center;
+    }
+    .sobre-mim {
+        height: 900px !important;
+        width: 100%;
+    }
+    .img-sm img {
+        width: 260px;
+    }
+    .img-sm {
+        padding-left: 90px ;
+    }
+    .projetos {
+        height: 900px !important;
+    }
+    .grid-projects {
+        padding: 0px 20px;
+    }
+    .edits {
+        height: 2280px !important;
+    }
+    .grid-itens {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto)) !important;
+    }
+    .edits-content {
+        padding: 0px 20px;
+    }
+    
 
 }
