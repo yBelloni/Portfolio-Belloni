@@ -15,8 +15,8 @@
 };
 
 :root {
-    --preto:#000000;
-    --color1: #202023;
+    --preto-1:#000000;
+    --color-1: #202023;
     --color-2: #73ffb2;
 }
 
@@ -106,7 +106,6 @@ body.dark .menu a:hover {
 }
 
 .telaInicio div h1 {
-    height: 200px;
     font-size: 7em;
     color: #EDEDED;
 }
