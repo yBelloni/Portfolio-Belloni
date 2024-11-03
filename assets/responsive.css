@@ -126,6 +126,9 @@
     .edits-content {
         padding: 0px 20px;
     }
+    form {
+        padding: 0px 20px;
+    }
     
 
 }
